@@ -363,6 +363,8 @@ spec:
         value: $(tasks.prefetch-dependencies.results.SOURCE_ARTIFACT)
       - name: CACHI2_ARTIFACT
         value: $(tasks.prefetch-dependencies.results.CACHI2_ARTIFACT)
+      - name: ARGS
+        value: "--project-name=hongweiliu17/python --report --org=ca9f75e7-f37e-44d9-9f09-151facf6e49b"
       runAfter:
       - build-image-index
       taskRef:
